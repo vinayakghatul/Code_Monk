@@ -39,5 +39,24 @@ class Rotate_Matrix_90_Clockwise {
     public void rotate(int[][] matrix) {
         matrix = transpose(matrix);
         matrix = reverse(matrix);
+
+        int n = matrix.length;
+
+        //Printing array after rotation
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println("\n");
+        }
+    }
+
+    public static void main(String args[]) {
+        int matrix[][] = {{1,2,3},{4,5,6},{7,8,9}};
+        int n = matrix.length;
+
+        Rotate_Matrix_90_Clockwise rotateMatrix90Clockwise = new Rotate_Matrix_90_Clockwise();
+
+        rotateMatrix90Clockwise.rotate(matrix);
     }
 }
