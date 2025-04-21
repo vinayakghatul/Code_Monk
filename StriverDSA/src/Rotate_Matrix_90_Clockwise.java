@@ -9,6 +9,8 @@ class Rotate_Matrix_90_Clockwise {
         int n = mat.length;
 
         for (int i=0;i<n;i++) {
+            // start with j = i+1, so that we hit only upper triagle in the matrix
+            // Swap upper and lower triangle to transpose
             for (int j=i+1;j<n;j++) {
                 int temp = mat[i][j];
                 mat[i][j] = mat[j][i];
@@ -21,6 +23,7 @@ class Rotate_Matrix_90_Clockwise {
 
     // Row wise reverse
     public int[][] reverse(int[][] mat) {
+        // For each row of matrix
         for (int[] row: mat) {
             int left=0;
             int right = row.length -1;
