@@ -19,16 +19,15 @@ class TreeNode {
     }
 }
 
-class Tree_PreOrder_Traversal {
+class Tree_PostOrder_Traversal {
 
-    public void inorder(TreeNode root, List<Integer> result) {
+    public void postOrder(TreeNode root, List<Integer> result) {
         if (root == null) {
             return;
         }
-        // visit root, traverse left, traverse right
+        postOrder(root.left, result);
+        postOrder(root.right, result);
         result.add(root.val);
-        inorder(root.left, result);
-        inorder(root.right, result);
     }
 
     public static void main(String args[]) {
@@ -44,10 +43,10 @@ class Tree_PreOrder_Traversal {
 
         List<Integer> result = new ArrayList<>();
 
-        Tree_PreOrder_Traversal treePreOrderTraversal = new Tree_PreOrder_Traversal();
+        Tree_PostOrder_Traversal treePostOrderTraversal = new Tree_PostOrder_Traversal();
 
-        treePreOrderTraversal.inorder(root, result);
+        treePostOrderTraversal.postOrder(root, result);
 
-        System.out.println("Pre-Order Traversal: " + result);
+        System.out.println("Post-Order Traversal: " + result);
     }
 }
