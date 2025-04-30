@@ -34,6 +34,12 @@ class TreeNode {
     }
 }
 
+/**
+ * Inrder (left->root->right)
+ * Visit left
+ * Add to visiting list
+ * Visit right
+ */
 class Tree_InOrder_Traversal {
 
     public void inorder(TreeNode root, List<Integer> result) {
