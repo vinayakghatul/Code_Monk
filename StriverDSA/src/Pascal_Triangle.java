@@ -1,5 +1,13 @@
 import java.util.*;
 
+/**
+ * Row 0:        1
+ * Row 1:       1 1
+ * Row 2:      1 2 1
+ * Row 3:     1 3 3 1
+ * Row 4:    1 4 6 4 1
+ */
+
 class Pascal_Triangle {
     public List<List<Integer>> generate(int numRows) {
 
