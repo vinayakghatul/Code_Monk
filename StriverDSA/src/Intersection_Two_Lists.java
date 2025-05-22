@@ -4,6 +4,10 @@ import java.util.*;
  * Given the heads of two singly linked-lists headA and headB,
  * return the node at which the two lists intersect.
  * If the two linked lists have no intersection at all, return null.
+ *
+ * Both pointers traverse both lists.
+ *
+ * After switching heads, both traverse equal lengths.
  */
 
 
