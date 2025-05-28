@@ -13,6 +13,12 @@ import java.util.*;
 
 class Subset_Sum {
 
+    /**
+     * This is variation of subset sum, where instead of target, we have
+     * to calculate total sum and divide into two parts as keep it as target
+     * @param nums
+     * @return
+     */
     public boolean isPartitionPossible(int[] nums) {
         int total = 0;
         for (int num : nums) total += num;
