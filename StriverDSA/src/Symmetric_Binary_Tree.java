@@ -1,5 +1,10 @@
 import java.util.*;
 
+/**
+ * Given the root of a binary tree, check whether
+ * it is a mirror of itself (i.e., symmetric around its center).
+ */
+
 class TreeNode {
     int val;
     TreeNode left;
