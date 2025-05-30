@@ -1,5 +1,9 @@
 import java.util.*;
 
+/**
+ * Stack implementation using Deque
+ */
+
 class Stack_Using_Deque {
 
     public static void main(String args[]) {
