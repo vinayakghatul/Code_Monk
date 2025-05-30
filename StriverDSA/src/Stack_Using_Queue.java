@@ -1,5 +1,9 @@
 import java.util.*;
 
+/**
+ * Stack Using Single Queue
+ */
+
 class Stack_Using_Queue {
 
     Queue<Integer> q = new LinkedList<>();
