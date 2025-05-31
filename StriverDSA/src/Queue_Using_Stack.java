@@ -1,5 +1,9 @@
 import java.util.*;
 
+/**
+ * Queue using 2 stacks input, output
+ */
+
 class Queue_Using_Stack{
     Stack<Integer> input = new Stack<>();
     Stack<Integer> output = new Stack<>();
